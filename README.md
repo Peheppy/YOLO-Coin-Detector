@@ -11,6 +11,7 @@ This project applies **YOLOv11s** for object detection of Brazilian coins, with 
   - `images/` and `labels/` folders with all samples.  
   - `classes.txt` containing the list of coin classes.  
   - Automated split into **5 folds** using `scikit-learn` KFold.  
+  - **Dataset source:** [Download here](https://drive.google.com/file/d/1LbcCQmxfR5IaBjUuQdXB7rPJCJIrE7_l/view?usp=sharing)  
 
 - **Training (K-Fold with YOLOv11s)**
   - Each fold gets its own `data.yaml` and `hyp.yaml`.  
@@ -36,3 +37,5 @@ This project applies **YOLOv11s** for object detection of Brazilian coins, with 
   - Visualizations with detected bounding boxes and coin totals.  
 
 ---
+```bash
+!pip install ultralytics scikit-learn matplotlib pandas pyyaml opencv-python
