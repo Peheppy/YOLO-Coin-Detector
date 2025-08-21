@@ -1,6 +1,6 @@
 # 🪙 YOLO-Coin-Detector
 
-This project applies **YOLOv11s** for object detection of Brazilian coins, with a pipeline for **K-Fold cross-validation training** and a **coin counting & valuation system** that sums the monetary value of detected coins in images.
+This project applies **YOLOv11s** for object detection of Brazilian coins, with a pipeline for **K-Fold cross-validation training** and a **coin counting & valuation system** that sums the monetary value of detected coins in images and videos.
 
 ---
 
@@ -31,11 +31,16 @@ This project applies **YOLOv11s** for object detection of Brazilian coins, with 
     - Detected coins  
     - Total monetary value  
 
+- **Video Inference**
+  - Load videos from a `test_videos/` folder.  
+  - Process each frame with the YOLO model.  
+  - Draw bounding boxes and class labels on frames.  
+  - Calculate total coin value per video or per frame.  
+  - Save processed videos with annotated frames for visualization.  
+
 - **Evaluation & Reporting**
   - Training metrics averaged across folds.  
-  - Final CSV report of coin detections per image.  
+  - Final CSV report of coin detections per image/video.  
   - Visualizations with detected bounding boxes and coin totals.  
 
 ---
-```bash
-!pip install ultralytics scikit-learn matplotlib pandas pyyaml opencv-python
